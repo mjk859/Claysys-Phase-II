@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             groupBox1 = new GroupBox();
+            warningLabel = new Label();
             button1 = new Button();
             PasswordTextBox = new TextBox();
             EmailTextBox = new TextBox();
@@ -53,6 +54,7 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.White;
+            groupBox1.Controls.Add(warningLabel);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(PasswordTextBox);
             groupBox1.Controls.Add(EmailTextBox);
@@ -64,6 +66,15 @@
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
+            // 
+            // warningLabel
+            // 
+            warningLabel.AutoSize = true;
+            warningLabel.Location = new Point(123, 129);
+            warningLabel.Name = "warningLabel";
+            warningLabel.Size = new Size(43, 15);
+            warningLabel.TabIndex = 5;
+            warningLabel.Text = "            ";
             // 
             // button1
             // 
@@ -86,10 +97,11 @@
             // 
             // EmailTextBox
             // 
-            EmailTextBox.Location = new Point(122, 103);
+            EmailTextBox.Location = new Point(122, 100);
             EmailTextBox.Name = "EmailTextBox";
             EmailTextBox.Size = new Size(100, 23);
             EmailTextBox.TabIndex = 1;
+            EmailTextBox.TextChanged += EmailTextBox_TextChanged;
             // 
             // label2
             // 
@@ -148,5 +160,6 @@
         private TextBox EmailTextBox;
         private Label label3;
         private Panel panel1;
+        private Label warningLabel;
     }
 }

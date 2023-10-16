@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using BCrypt.Net;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace EmployeeManagement
 {
@@ -63,6 +64,34 @@ namespace EmployeeManagement
         private void ShowPasswordCheckBox_CheckedChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void EmailTextBox_TextChanged(object sender, EventArgs e)
+        {
+            string email = EmailTextBox.Text;
+
+            if (!IsValidEmail(email))
+            {
+                EmailTextBox.BackColor = Color.Red;
+                warningLabel.Text = "Invalid email format.";
+            }
+            else
+            {
+                EmailTextBox.BackColor = SystemColors.Window;
+                warningLabel.Text = "";
+            }
+        }
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }
