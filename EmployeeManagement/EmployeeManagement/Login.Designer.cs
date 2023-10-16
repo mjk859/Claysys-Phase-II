@@ -30,7 +30,6 @@
         {
             label1 = new Label();
             groupBox1 = new GroupBox();
-            ShowPasswordCheckBox = new CheckBox();
             button1 = new Button();
             PasswordTextBox = new TextBox();
             EmailTextBox = new TextBox();
@@ -54,7 +53,6 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.White;
-            groupBox1.Controls.Add(ShowPasswordCheckBox);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(PasswordTextBox);
             groupBox1.Controls.Add(EmailTextBox);
@@ -67,21 +65,10 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
             // 
-            // ShowPasswordCheckBox
-            // 
-            ShowPasswordCheckBox.AutoSize = true;
-            ShowPasswordCheckBox.Location = new Point(26, 184);
-            ShowPasswordCheckBox.Name = "ShowPasswordCheckBox";
-            ShowPasswordCheckBox.Size = new Size(108, 19);
-            ShowPasswordCheckBox.TabIndex = 5;
-            ShowPasswordCheckBox.Text = "Show password";
-            ShowPasswordCheckBox.UseVisualStyleBackColor = true;
-            ShowPasswordCheckBox.CheckedChanged += ShowPasswordCheckBox_CheckedChanged_1;
-            // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(80, 219);
+            button1.Location = new Point(84, 196);
             button1.Name = "button1";
             button1.Size = new Size(75, 34);
             button1.TabIndex = 4;
@@ -161,6 +148,5 @@
         private TextBox EmailTextBox;
         private Label label3;
         private Panel panel1;
-        private CheckBox ShowPasswordCheckBox;
     }
 }

@@ -59,5 +59,10 @@ namespace EmployeeManagement
             }
 
         }
+
+        private void ShowPasswordCheckBox_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
