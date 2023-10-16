@@ -26,3 +26,4 @@ D:\Claysys\EmployeeManagement\EmployeeManagement\obj\Debug\net6.0-windows\Employ
 D:\Claysys\EmployeeManagement\EmployeeManagement\obj\Debug\net6.0-windows\ref\EmployeeManagement.dll
 D:\Claysys\EmployeeManagement\EmployeeManagement\obj\Debug\net6.0-windows\EmployeeManagement.EmployeeInfo.resources
 D:\Claysys\EmployeeManagement\EmployeeManagement\obj\Debug\net6.0-windows\EmployeeManagement.Login.resources
+D:\Claysys\EmployeeManagement\EmployeeManagement\bin\Debug\net6.0-windows\BCrypt.Net.dll
