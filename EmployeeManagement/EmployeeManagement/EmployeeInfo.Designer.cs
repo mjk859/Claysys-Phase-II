@@ -58,23 +58,28 @@
             // 
             // button1
             // 
+            button1.BackColor = SystemColors.ButtonFace;
+            button1.FlatAppearance.BorderColor = Color.Blue;
+            button1.FlatAppearance.BorderSize = 10;
+            button1.FlatStyle = FlatStyle.System;
             button1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(0, 62);
+            button1.Location = new Point(204, 74);
             button1.Name = "button1";
-            button1.Size = new Size(800, 85);
+            button1.Size = new Size(403, 76);
             button1.TabIndex = 1;
             button1.Text = "Show Employees";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            button1.MouseHover += button1_MouseHover;
             // 
             // dataGridView1
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(-1, 146);
+            dataGridView1.Location = new Point(-1, 156);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(801, 229);
+            dataGridView1.Size = new Size(801, 293);
             dataGridView1.TabIndex = 2;
             // 
             // EmployeeInfo

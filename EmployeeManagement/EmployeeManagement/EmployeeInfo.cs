@@ -32,5 +32,11 @@ namespace EmployeeManagement
 
             dataGridView1.DataSource = table;
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tooltip = new ToolTip();
+            tooltip.SetToolTip(button1, "View every employees information");
+        }
     }
 }

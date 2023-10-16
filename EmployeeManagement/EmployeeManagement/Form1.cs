@@ -24,7 +24,25 @@ namespace EmployeeManagement
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void button1_Enter(object sender, EventArgs e)
+        {
+            ToolTip tooltip = new ToolTip();
+
+            tooltip.SetToolTip(button1, "Register/Edit employees");
+        }
+
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            ToolTip tooltip = new ToolTip();
+            tooltip.SetToolTip(button2, "View Employee Information");
         }
     }
 }

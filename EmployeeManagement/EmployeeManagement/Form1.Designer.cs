@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
             label1 = new Label();
@@ -36,6 +37,7 @@
             button2 = new Button();
             button1 = new Button();
             pictureBox1 = new PictureBox();
+            toolTip1 = new ToolTip(components);
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -97,6 +99,7 @@
             button2.Text = "Employee Information";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
+            button2.MouseHover += button2_MouseHover;
             // 
             // button1
             // 
@@ -110,6 +113,7 @@
             button1.Text = "Employee";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            button1.Enter += button1_Enter;
             // 
             // pictureBox1
             // 
@@ -148,5 +152,6 @@
         private Button button2;
         private Button button1;
         private PictureBox pictureBox1;
+        private ToolTip toolTip1;
     }
 }

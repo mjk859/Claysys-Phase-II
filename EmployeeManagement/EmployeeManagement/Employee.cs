@@ -298,5 +298,29 @@ namespace EmployeeManagement
                 warningLabel4.Text = "";
             }
         }
+
+        private void button1_MouseHover(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip tooltip = new System.Windows.Forms.ToolTip();
+            tooltip.SetToolTip(button1, "Add Employee");
+        }
+
+        private void button2_MouseHover(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip tooltip = new System.Windows.Forms.ToolTip();
+            tooltip.SetToolTip(button2, "Clear Fields");
+        }
+
+        private void button3_MouseHover(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip tooltip = new System.Windows.Forms.ToolTip();
+            tooltip.SetToolTip(button3, "Delete Employee");
+        }
+
+        private void button4_MouseHover(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip tooltip = new System.Windows.Forms.ToolTip();
+            tooltip.SetToolTip(button4, "Edit Employee");
+        }
     }
 }

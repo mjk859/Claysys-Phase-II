@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             panel1 = new Panel();
             label1 = new Label();
             groupBox1 = new GroupBox();
@@ -58,6 +59,7 @@
             label3 = new Label();
             label2 = new Label();
             dataGridView1 = new DataGridView();
+            toolTip1 = new ToolTip(components);
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -195,6 +197,7 @@
             button4.Text = "Edit";
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
+            button4.MouseHover += button4_MouseHover;
             // 
             // button3
             // 
@@ -207,6 +210,7 @@
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
+            button3.MouseHover += button3_MouseHover;
             // 
             // button2
             // 
@@ -219,6 +223,7 @@
             button2.Text = "New";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
+            button2.MouseHover += button2_MouseHover;
             // 
             // button1
             // 
@@ -231,6 +236,7 @@
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            button1.MouseHover += button1_MouseHover;
             // 
             // pictureBox2
             // 
@@ -430,5 +436,6 @@
         private Label warningLabel3;
         private Label warningLabel4;
         private Label label10;
+        private ToolTip toolTip1;
     }
 }
