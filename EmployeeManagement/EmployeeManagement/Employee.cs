@@ -322,5 +322,21 @@ namespace EmployeeManagement
             System.Windows.Forms.ToolTip tooltip = new System.Windows.Forms.ToolTip();
             tooltip.SetToolTip(button4, "Edit Employee");
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string input = textBox1.Text;
+
+            if (!IsNumeric(input))
+            {
+                textBox1.BackColor = Color.Red;
+                warningLabel5.Text = "Id should contain only numbers.";
+            }
+            else
+            {
+                textBox1.BackColor = SystemColors.Window;
+                warningLabel5.Text = "";
+            }
+        }
     }
 }

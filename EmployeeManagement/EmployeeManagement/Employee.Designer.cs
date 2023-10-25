@@ -32,6 +32,7 @@
             panel1 = new Panel();
             label1 = new Label();
             groupBox1 = new GroupBox();
+            warningLabel5 = new Label();
             label10 = new Label();
             warningLabel4 = new Label();
             warningLabel3 = new Label();
@@ -90,6 +91,7 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.FromArgb(224, 224, 224);
+            groupBox1.Controls.Add(warningLabel5);
             groupBox1.Controls.Add(label10);
             groupBox1.Controls.Add(warningLabel4);
             groupBox1.Controls.Add(warningLabel3);
@@ -122,6 +124,15 @@
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Employees";
+            // 
+            // warningLabel5
+            // 
+            warningLabel5.AutoSize = true;
+            warningLabel5.Location = new Point(211, 41);
+            warningLabel5.Name = "warningLabel5";
+            warningLabel5.Size = new Size(37, 15);
+            warningLabel5.TabIndex = 26;
+            warningLabel5.Text = "          ";
             // 
             // label10
             // 
@@ -296,10 +307,11 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(211, 22);
+            textBox1.Location = new Point(212, 15);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(138, 23);
             textBox1.TabIndex = 7;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label8
             // 
@@ -367,7 +379,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(33, 24);
+            label2.Location = new Point(33, 15);
             label2.Name = "label2";
             label2.Size = new Size(25, 21);
             label2.TabIndex = 0;
@@ -437,5 +449,6 @@
         private Label warningLabel4;
         private Label label10;
         private ToolTip toolTip1;
+        private Label warningLabel5;
     }
 }
